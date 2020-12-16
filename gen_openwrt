@@ -311,7 +311,6 @@ do_others() {
     [ -f $path/etc/modules.d/usb-net-asix-ax88179 ] || printf 'ax88179_178a' > $path/etc/modules.d/usb-net-asix-ax88179
     [ -f $path/etc/modules.d/usb-net-rtl8150 ] || printf 'rtl8150' > $path/etc/modules.d/usb-net-rtl8150
     [ -f $path/etc/modules.d/usb-net-rtl8152 ] || printf 'r8152' > $path/etc/modules.d/usb-net-rtl8152
-    [ -f $path/usr/bin/ntfs-3g ] && ln -s $path/usr/bin/ntfs-3g $path/sbin/mount.ntfs
 
     chown -R 0:0 $path
 }
